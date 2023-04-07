@@ -1,0 +1,84 @@
+* , *::before, *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.mainContainer{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(14, 13, 13);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+.todoList{
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width: 20vw;
+  height: 50vh;
+  background-color: black;
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+  border-radius: 10px;
+  padding: 1.4rem;
+}
+.todoList::-webkit-scrollbar {
+  width: .5em;
+}
+ 
+.todoList::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+.todoList::-webkit-scrollbar-thumb {
+  background-color: rgb(70, 68, 68);
+  outline: 1px solid rgb(43, 44, 46);
+}
+input{
+  font-size: 1.2rem;
+  width: 12rem;
+  padding: .2rem;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  }
+ 
+button{
+  font-size: 1.5rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  border: none;
+  margin-left: .5rem;
+  }
+i{
+
+  margin-right: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  }
+  h6{
+    margin-top: 1rem;
+  }
+  i:hover{
+    color: red;
+    transition: .3s ease all;
+    }
+button:hover{
+  background-color: black;
+  color: white;
+  transition: .8s ease all;
+  border: 1px solid white;
+  }
+  
+  .showList{
+    width: 20vw;
+    color: white;
+    margin: .5rem 0 0 1rem;
+    font-weight: bold;
+    font-size: 1rem;
+    }
+  h1{
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+  }
